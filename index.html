@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kue Ulang Tahun Untuk Kancwa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="birthday-confetti"></div>
+  <div class="pink-dots"></div>
+  <div class="container">
+    <div class="cake-container">
+      <h1 class="title">
+        🎉 SELAMAT ULANG TAHUN 🎉 <br />
+        <span class="name">Kancwa</span>!
+      </h1>
+      <p class="instruction">
+        Buatlah harapan (berdoa dalam hati ya) dan tiup lilinnya 🎂 (gunakan suaramu!)
+      </p>
+      <div class="cake">
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="icing"></div>
+        <div class="candle-container">
+          <div class="flame" id="flame"></div>
+          <div class="stick"></div>
+          <div class="fire-particles" id="fireParticles"></div>
+          <div class="smoke-puff" id="smokePuff"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message" id="wishMessage">
+      Selamat bertambah usia dan sehat selalu ya!
+    </div>
+    <div class="mic-status" id="micStatus"></div>
+
+    <!-- Tombol untuk membuka pesan (akan muncul setelah lilin padam) -->
+    <button id="loveLetterBtn" class="love-letter-btn hidden">
+      Baca
+    </button>
+  </div>
+
+  <!-- Modal untuk pesan -->
+  <div id="loveLetterModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Untuk Kancwa</h2>
+      <div class="letter-content">
+        <p>
+          Selamat ulang tahun ya, Kancwa 🎂🤍
+          Semoga hari ini berjalan dengan baik dan tahun ini membawa banyak hal yang bikin kamu senyum.
+        </p>
+
+        <p>
+          Aku mungkin nggak terlalu pintar merangkai kata, tapi aku mau bilang… aku senang bisa kenal kamu sejauh ini.
+          Kamu itu orang yang enak diajak ngobrol dan punya cara sendiri bikin suasana jadi lebih nyaman.
+        </p>
+
+        <p>
+          Kalau lagi capek atau lagi banyak pikiran, jangan terlalu keras sama diri sendiri ya.
+          Istirahat kalau perlu, ambil waktu buat diri sendiri, itu juga penting.
+        </p>
+
+        <p>
+          Semoga ke depan kamu selalu dikelilingi hal-hal baik, orang-orang yang tulus, dan hal-hal yang bikin kamu
+          bahagia
+        </p>
+
+        <p>
+          Oh iya, aku ada sesuatu buat kamu sebagai hadiah kecil 🎁
+          Nggak besar, tapi semoga bisa bikin kamu sedikit senang.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="birthdaySong" src="Ghea Indrawari - 1000X (Official Visualizer).mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
